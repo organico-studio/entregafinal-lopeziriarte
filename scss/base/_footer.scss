@@ -1,0 +1,24 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* estilos de footer */
+
+footer{
+    padding: 10px 20px;
+    img{
+        height: 40px;
+    }
+    p{
+        font-size: 10px;
+        color: $color-terciario;
+        margin-left: 10px;
+    }
+}
+
+.aviso-privacidad{
+    color: $color-terciario;
+    font-weight: bold;
+    text-decoration: none;
+}

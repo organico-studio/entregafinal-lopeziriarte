@@ -1,0 +1,24 @@
+//mixin texto
+
+@mixin parrafo{
+    font-family: $fuente-principal;
+    color: $color-principal;
+}
+
+@mixin header{
+    font-family: $fuente-principal;
+    color: $color-principal;
+    font-weight: bold;
+}
+
+//botones
+
+@mixin boton {
+    font-family: $fuente-principal;
+    color: $color-fondo;
+    background-color: $color-secundario;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}

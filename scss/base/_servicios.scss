@@ -1,0 +1,27 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* estilos de servicios */
+
+.servicios-cat{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 10px;
+    gap: 10px;
+}
+
+.servicios-intro, .clientes-txt{
+    text-align: left;
+}
+
+.servicios-txt{
+    margin-top: 20px;
+    border-top: $color-secundario solid 10px;
+    text-align: left;
+    line-height: 10px;
+    h5{
+        margin: 10px 0px;
+    }
+}

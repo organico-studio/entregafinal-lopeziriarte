@@ -1,0 +1,45 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* reset */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/* estilos generales */
+
+html, body{
+    height: 100%;
+}
+  
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main{
+    flex: 1;
+    align-content: center;
+    padding: 10px;    
+}
+
+p{
+    @include parrafo;
+}
+
+h1{
+    @include header;
+    text-align: center;
+    margin: 20px 0px;
+}
+
+h3, h5{
+    @include header;
+}

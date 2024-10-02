@@ -1,0 +1,53 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* animacion */
+
+.intro-animacion-desktop{
+    display: none;
+}
+
+.deslizar{
+    animation: mantenerYColapsar 5s forwards; /* Duración total de la animación */
+    max-width: 100%; /* Ajusta según la altura del video o imagen */
+    transition: max-height 1s ease-out; /* Transición para colapsar suavemente */
+}
+
+@keyframes mantenerYColapsar{
+    0%{
+        transform: translateY(0); /* Posición inicial */
+        opacity: 1; /* Visible */
+        max-width: 100%; /* Altura inicial (ajusta según tu video o imagen) */
+    }
+    80%{
+        transform: translateY(0); /* Mantenerse fija hasta el 90.9% (10 segundos) */
+        opacity: 1; /* Sigue siendo visible */
+        max-width: 100%; /* Sigue con su altura original */
+    }
+    100%{
+        transform: translateY(-100%); /* Deslizar hacia arriba */
+        opacity: 0; /* Desaparecer */
+        max-width: 0; /* Colapsar para que el resto del contenido ocupe el lugar */
+    }
+}
+ 
+/* estilos de home */
+ 
+.intro-txt{
+    text-align: center;
+    margin: 30px;
+    img{
+        width: 50%;
+        margin-bottom: 20px;
+    }
+}
+
+.boton-portafolio{
+    @include boton;
+}
+
+.boton-portafolio:hover{
+    font-weight: bold;
+}

@@ -1,0 +1,44 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* estilos de portafolio */
+
+.portafolio{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+  
+.portafolio-img{
+    position: relative;
+    width: 100%;
+    img{
+        width: 100%;
+        height: auto;
+        display: block;
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+}
+
+.portafolio-img:hover{
+    img{
+        opacity: 0.10;
+    }
+}
+
+.portafolio-txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.portafolio-img:hover .portafolio-txt{
+    opacity: 1;
+}

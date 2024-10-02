@@ -1,0 +1,27 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* estilos de nosotros */
+
+.nosotros{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0px 10px;
+    gap: 10px;
+    text-align: center;
+    p{
+        text-align: left;
+    }
+    h3, h5{
+        text-align: center;
+    }
+}
+
+.nosotros-img{
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}

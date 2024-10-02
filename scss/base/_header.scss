@@ -1,0 +1,43 @@
+//import de variables
+@import "../utilidades/variables";
+//imprt de mixin
+@import "../utilidades/mixin";
+
+/* estilos de header */
+
+.white-bg{
+    background-color: $color-fondo;
+}
+
+.logotipo{
+    height: 50px;
+    margin-left: 10px;
+}
+
+.bold-act{
+    font-weight: 500;
+}
+
+.bold-hov:hover{
+    font-weight: 600;
+}
+
+header{
+    nav{
+        div{
+            div{
+                ul{
+                    li{
+                        font-family: $fuente-secundaria;
+                        font-weight: 400;
+                        font-size: 20px;
+                        padding: 0px 10px;
+                        color: $color-principal;
+                        text-decoration: none;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}
