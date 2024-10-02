@@ -1,6 +1,6 @@
 //import de variables
 @import "../utilidades/variables";
-//imprt de mixin
+//import de mixin
 @import "../utilidades/mixin";
 
 /* reset */
@@ -40,6 +40,12 @@ h1{
     margin: 20px 0px;
 }
 
-h3, h5{
+h2{
     @include header;
+    font-size: 1.25em;
+}
+
+h3{
+    @include header;
+    font-size: 1em;
 }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* reset */
 * {
   margin: 0px;
@@ -36,10 +35,18 @@ h1 {
   margin: 20px 0px;
 }
 
-h3, h5 {
+h2 {
   font-family: "proxima-nova";
   color: #666666;
   font-weight: bold;
+  font-size: 1.25em;
+}
+
+h3 {
+  font-family: "proxima-nova";
+  color: #666666;
+  font-weight: bold;
+  font-size: 1em;
 }
 
 /* estilos de header */
@@ -76,26 +83,26 @@ header nav div div ul li {
 }
 
 .deslizar {
-  animation: mantenerYColapsar 5s forwards; /* Duración total de la animación */
-  max-width: 100%; /* Ajusta según la altura del video o imagen */
-  transition: max-height 1s ease-out; /* Transición para colapsar suavemente */
+  animation: mantenerYColapsar 5s forwards; /* duracion total de la animacion */
+  max-width: 100%;
+  transition: max-height 1s ease-out; /* transicion para colapsar suavemente */
 }
 
 @keyframes mantenerYColapsar {
   0% {
-    transform: translateY(0); /* Posición inicial */
-    opacity: 1; /* Visible */
-    max-width: 100%; /* Altura inicial (ajusta según tu video o imagen) */
+    transform: translateY(0); /* posicion inicial */
+    opacity: 1; /* visible */
+    max-width: 100%;
   }
   80% {
-    transform: translateY(0); /* Mantenerse fija hasta el 90.9% (10 segundos) */
-    opacity: 1; /* Sigue siendo visible */
-    max-width: 100%; /* Sigue con su altura original */
+    transform: translateY(0); /* mantenerse en posicion */
+    opacity: 1; /* visible */
+    max-width: 100%;
   }
   100% {
-    transform: translateY(-100%); /* Deslizar hacia arriba */
-    opacity: 0; /* Desaparecer */
-    max-width: 0; /* Colapsar para que el resto del contenido ocupe el lugar */
+    transform: translateY(-100%); /* deslizar hacia arriba */
+    opacity: 0; /* desaparecer */
+    max-width: 0; /* colapsar para que el resto del contenido ocupe el lugar */
   }
 }
 /* estilos de home */
