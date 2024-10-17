@@ -8,8 +8,6 @@
 .servicios-cat{
     display: grid;
     grid-template-columns: 1fr;
-    margin: 0px 10px;
-    gap: 10px;
 }
 
 .servicios-intro, .clientes-txt{
@@ -17,11 +15,19 @@
 }
 
 .servicios-txt{
-    margin-top: 20px;
+    margin: 20px 10px 0px 0px;
     border-top: $color-secundario solid 10px;
     text-align: left;
     line-height: 10px;
     h5{
         margin: 10px 0px;
+    }
+}
+
+.clientes{
+    h2{
+        text-align: center;
+        margin: 20px 0px;
+        font-size: 2em;
     }
 }

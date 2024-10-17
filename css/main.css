@@ -153,6 +153,7 @@ header nav div div ul li {
 }
 
 .portafolio-txt {
+  color: #666666;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -170,8 +171,6 @@ header nav div div ul li {
 .servicios-cat {
   display: grid;
   grid-template-columns: 1fr;
-  margin: 0px 10px;
-  gap: 10px;
 }
 
 .servicios-intro, .clientes-txt {
@@ -179,13 +178,19 @@ header nav div div ul li {
 }
 
 .servicios-txt {
-  margin-top: 20px;
+  margin: 20px 10px 0px 0px;
   border-top: #6C98BC solid 10px;
   text-align: left;
   line-height: 10px;
 }
 .servicios-txt h5 {
   margin: 10px 0px;
+}
+
+.clientes h2 {
+  text-align: center;
+  margin: 20px 0px;
+  font-size: 2em;
 }
 
 /* estilos de nosotros */
